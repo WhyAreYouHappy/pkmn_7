@@ -40,7 +40,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     }
                 }
             }
-
             if(jwt == null) {
                 filterChain.doFilter(request, response);
                 return;
